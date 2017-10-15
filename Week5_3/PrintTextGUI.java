@@ -9,10 +9,10 @@ public class PrintTextGUI extends JFrame implements ActionListener
 {
 	//instance variables are all the components 
 	private JPanel top, middle, bottom;
-        private JTextField text;
-        private JLabel label;
-        private JButton printButton, clearButton;
-	
+	private JTextField text;
+	private JLabel label;
+	private JButton printButton, clearButton;
+
 	//The constructor adds all the components to the frame
 	public PrintTextGUI()
 	{
@@ -25,13 +25,13 @@ public class PrintTextGUI extends JFrame implements ActionListener
 		//set layout
 		layoutComponents();
 	}
-	
+
 	private void layoutComponents()
 	{
 		//top panel is white and contains a button
 		top = new JPanel();
 		top.setBackground(Color.white);
-		
+
 		//create button with listener and add to the top panel
 		printButton = new JButton("Print text");
 		printButton.addActionListener(this);
@@ -43,47 +43,47 @@ public class PrintTextGUI extends JFrame implements ActionListener
 
 		//add the top panel to the content pane
 		add(top,BorderLayout.NORTH);
-		
+
 		//middle panel is green and contains a label and a text field
 		middle = new JPanel();
 		middle.setBackground(Color.green);
-		
-                //add a label and a text field to the middle panel
+
+		//add a label and a text field to the middle panel
 		JLabel enterLabel = new JLabel("Enter text here: ");
 		middle.add(enterLabel);
 		text = new JTextField(10);
-                middle.add(text);
+		middle.add(text);
 		add(middle, BorderLayout.CENTER);
 
 		bottom = new JPanel();
-                bottom.setBackground(Color.green);
+		bottom.setBackground(Color.green);
 		label = new JLabel("");
 		bottom.add(label);
 		add(bottom, BorderLayout.SOUTH);
 	}
-	
+
 	//handle button events
-	
+
 	public void actionPerformed(ActionEvent e)
 	{
 		if (e.getSource()==printButton)
-		    printText();
+			printText();
 		else if (e.getSource()==clearButton)
-		    clearText();
+			clearText();
 	}
-	
+
 	//action if print button pressed
 	private void printText()
 	{
-	        String s = text.getText();
-	        label.setText("You entered: \""+s+"\"");
-	        text.setText("");
+		String s = text.getText();
+		label.setText("You entered: \""+s+"\"");
+		text.setText("");
 	}
 
 	//action if clear button pressed
 	private void clearText()
 	{
-	        label.setText("");
-	        text.setText("");
+		label.setText("");
+		text.setText("");
 	}
 }
