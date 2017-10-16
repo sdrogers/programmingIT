@@ -30,5 +30,6 @@ public class ButtonFrame extends JFrame
 		this.add(button2);
 		this.add(label2);
 		this.add(textField);
+		button1.setEnabled(false);
 	}
 }

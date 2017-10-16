@@ -13,4 +13,5 @@ public class JustFrame extends JFrame
 		setLocation(100,100);
 		setTitle("Just a JFrame");
 	}
+	
 }

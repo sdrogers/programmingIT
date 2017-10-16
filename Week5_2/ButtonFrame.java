@@ -46,5 +46,6 @@ public class ButtonFrame extends JFrame
 		panel2.add(textField);
 		panel2.add(label4);
 		this.add(panel2,BorderLayout.SOUTH);
+		
 	}
 }
