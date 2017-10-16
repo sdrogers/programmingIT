@@ -49,7 +49,7 @@ public class NestedLayoutGUI extends JFrame
 		
 		//top, middle and bottom panels
 		layoutTop();
-                layoutMiddle();
+        layoutMiddle();
 		layoutBottom();
 	}
 	
