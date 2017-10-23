@@ -56,7 +56,7 @@ public class PrintTextGUI extends JFrame implements ActionListener
 		add(middle, BorderLayout.CENTER);
 
 		bottom = new JPanel();
-		bottom.setBackground(Color.green);
+		bottom.setBackground(Color.yellow);
 		label = new JLabel("");
 		bottom.add(label);
 		add(bottom, BorderLayout.SOUTH);

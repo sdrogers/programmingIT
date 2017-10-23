@@ -43,7 +43,7 @@ public class PrintTextGUI2 extends JFrame implements ActionListener
 		middle = new JPanel();
 		middle.setBackground(Color.white);
 
-		//add a label and a text field to the middle panel
+		//add a label
 		myLabel = new JLabel("");
 		middle.add(myLabel);
 
@@ -56,7 +56,7 @@ public class PrintTextGUI2 extends JFrame implements ActionListener
 	{
 		String s = text.getText().trim();
 		try {
-			int n = Integer.parseInt(s);
+			double n = Integer.parseInt(s);
 			myLabel.setText("The square root of "+n+" is "+
 					String.format("%.2f",Math.sqrt(n)));
 		}
