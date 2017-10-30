@@ -3,7 +3,7 @@ public class CalculatorModel {
 	private long firstNumber;
 	private long secondNumber;
 	private int operation;
-	private int state;
+
 	
 	public static final int ADD = 0;
 	public static final int SUBTRACT = 1;
@@ -34,7 +34,7 @@ public class CalculatorModel {
 	public static void main(String[] args) {
 		CalculatorModel c = new CalculatorModel();
 		c.setFirstNumber(10);
-		c.setOperation(CalculatorModel.ADD);
+		c.setOperation(0);
 		c.setSecondNumber(20);
 		System.out.println(c.evaluate());
 	}
