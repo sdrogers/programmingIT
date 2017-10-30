@@ -6,8 +6,6 @@ public class ShowMinMaxAveGUI
 		MinMaxAveController controller = new MinMaxAveController(model);
 		MinMaxAveView view = new MinMaxAveView(model, controller);
 		controller.setView(view);
-		// Alternatively, comment out previous two lines..
-		
 		view.setVisible(true);
 	}
 }

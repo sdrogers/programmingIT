@@ -46,7 +46,7 @@ public class CashRegister2
       int payment = dollars * PENNIES_PER_DOLLAR 
          + quarters * PENNIES_PER_QUARTER + dimes * PENNIES_PER_DIME
          + nickels * PENNIES_PER_NICKEL + pennies;
-      change = payment - purchase;            
+      change = payment - purchase; 
    }
    
    /**

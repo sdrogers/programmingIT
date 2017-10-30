@@ -10,7 +10,7 @@ public class MinMaxAveController implements ActionListener
 	public MinMaxAveController(MinMaxAveModel model) {
 		modelObject = model;
 		// Alternatively...
-		// viewObject = MinMaxAveView(modelObject, this);
+//		 viewObject = MinMaxAveView(modelObject, this);
 	}
 
 	public void setView(MinMaxAveView view) {

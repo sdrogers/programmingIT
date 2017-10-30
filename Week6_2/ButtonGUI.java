@@ -38,6 +38,7 @@ public class ButtonGUI extends JFrame implements ActionListener
 		
 		serifButton = new JButton("Change to serif");
 		serifButton.addActionListener(this);
+		
 		top.add(serifButton);
 		
 		//add the top panel to the content pane
