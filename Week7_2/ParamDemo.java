@@ -5,11 +5,11 @@
 
 public class ParamDemo
 {
-        public ParamDemo()
-        {
-        }
+	public ParamDemo()
+	{
+	}
 
-        // swaps values in two parameters
+	// swaps values in two parameters
 	// when called demonstrates that there is no change
 	// to the actual parameters when the method exits
 
@@ -19,7 +19,7 @@ public class ParamDemo
 		a=b;
 		b=temp;
 	}
-	
+
 	// swaps the first two entries in the array parameter
 	// when called demonstrates that the entries of an
 	// actual parameter that is an array can be changed

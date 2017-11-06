@@ -1,0 +1,63 @@
+/* 1 */ /**
+/* 2 */  Class to illustrate reading lines from a file using the Scanner class
+/* 3 */  and writing lines to a file using the PrintWriter class.
+/* 4 */  Numbers the lines of a given input file and writes to a given output file
+/* 5 */  */
+/* 6 */ 
+/* 7 */ import java.io.*;
+/* 8 */ import java.util.*;
+/* 9 */ 
+/* 10 */ public class LineNumberer
+/* 11 */ {
+/* 12 */ 	public static void main(String[] args)
+/* 13 */ 	{
+/* 14 */ 		// create Scanner object to read from the keyboard 
+/* 15 */ 		Scanner console = new Scanner(System.in);
+/* 16 */ 
+/* 17 */ 		// prompt the user for the name of the input file 
+/* 18 */ 		System.out.print("Input file: ");
+/* 19 */ 		String inputFileName = console.next();
+/* 20 */ 
+/* 21 */ 		// prompt the user for the name of the output file 
+/* 22 */ 		System.out.print("Output file: ");
+/* 23 */ 		String outputFileName = console.next();
+/* 24 */ 
+/* 25 */ 		FileReader reader = null;
+/* 26 */ 		PrintWriter out = null;
+/* 27 */ 		
+/* 28 */ 		try 
+/* 29 */ 		{
+/* 30 */ 			try {
+/* 31 */ 				// try to open input file
+/* 32 */ 				reader = new FileReader(inputFileName);
+/* 33 */ 				// create a scanner object from reader
+/* 34 */ 				Scanner in = new Scanner(reader);
+/* 35 */ 				// open output file
+/* 36 */ 				out = new PrintWriter(outputFileName);
+/* 37 */ 				int lineNumber = 1;
+/* 38 */ 				// loop as long as there are more lines in the input file
+/* 39 */ 				while (in.hasNextLine())
+/* 40 */ 				{
+/* 41 */ 					// read next line from input file
+/* 42 */ 					String line = in.nextLine();
+/* 43 */ 					// number the line (using a comment) and output this data
+/* 44 */ 					out.print("/* " + lineNumber + " */ ");
+/* 45 */ 					// output the line read from the input file
+/* 46 */ 					out.println(line);
+/* 47 */ 					lineNumber++;
+/* 48 */ 				}
+/* 49 */ 			}
+/* 50 */ 			finally {
+/* 51 */ 				// close the input file assuming it was successfully opened
+/* 52 */ 				if (reader != null) reader.close();
+/* 53 */ 				// close the output file assuming it was successfully opened
+/* 54 */ 				if (out != null) out.close();
+/* 55 */ 			}
+/* 56 */ 		}
+/* 57 */ 		catch (IOException exception)
+/* 58 */ 		{
+/* 59 */ 			// error processing either input or output file
+/* 60 */ 			System.out.println("Error processing file: " + exception);
+/* 61 */ 		}
+/* 62 */ 	}
+/* 63 */ }

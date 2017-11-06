@@ -34,7 +34,7 @@ public class CalculatorModel {
 	public static void main(String[] args) {
 		CalculatorModel c = new CalculatorModel();
 		c.setFirstNumber(10);
-		c.setOperation(0);
+		c.setOperation(CalculatorModel.ADD);
 		c.setSecondNumber(20);
 		System.out.println(c.evaluate());
 	}

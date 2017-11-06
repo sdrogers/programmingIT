@@ -1,0 +1,27 @@
+rabbit
+goldfish
+cat
+dog
+cat
+parrot
+rabbit
+dog
+dog
+parrot
+rabbit
+hamster
+cat
+gerbil
+guinea pig
+parrot
+budgie
+dog
+cat
+goldfish
+hamster
+dog
+dog
+rabbit
+guinea pig
+hamster
+budgie

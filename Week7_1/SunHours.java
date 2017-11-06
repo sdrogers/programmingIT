@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 /**
   Illustrates
   creating an integer array of known values
@@ -16,6 +18,12 @@ public class SunHours
 		int arrayLen = sunHours.length;
 
 		//print array in normal order
+		System.out.print("Printing the old way:");
+		for(int i=0;i<sunHours.length;i++)
+			System.out.print(sunHours[i] + " ");
+		System.out.println();
+		
+		
 		System.out.print("Printing array in the normal order : ");
 		for (int hours : sunHours)
 			System.out.print(hours + "  ");
@@ -26,5 +34,7 @@ public class SunHours
 		for (int index = arrayLen - 1; index >= 0; index--)
 			System.out.print(sunHours[index] + "  ");
 		System.out.println();
+		
+		
 	}
 }

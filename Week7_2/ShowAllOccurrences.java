@@ -10,9 +10,9 @@ public class ShowAllOccurrences
 	public static void main(String[] args)
 	{
 		final int NUM_ROLLS = 100;                //number of rolls of the die
-                final int QUERY_NUM = 6;                  //number to search for
+		final int QUERY_NUM = 6;                  //number to search for
 		int [] dieRolls = new int[NUM_ROLLS];     //array - to store all die rolls
-		
+
 		final String INFILE = "dieRolls.txt";     //input text file
 
 		AllOccurrences allOccs = new AllOccurrences ();
@@ -27,7 +27,7 @@ public class ShowAllOccurrences
 				fr = new FileReader(INFILE);
 				// construct a scanner from fr
 				Scanner in = new Scanner(fr);
-				
+
 				//for each roll of the die
 				for (int roll = 0; roll < NUM_ROLLS; roll++)
 				{
