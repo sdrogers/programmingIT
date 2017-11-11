@@ -41,6 +41,9 @@ public class Person {
 		Console c = new Console();
 		p.print(c);
 		
+		// Alternative...
+		Person p2 = new Person("Fred","Davies",new MyDate(02,10,1975));
+		
 		MyDate today = new MyDate(23,10,17);
 		// Note this prints in eclipse and not in the console...
 		System.out.println(p.age(today));

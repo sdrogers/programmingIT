@@ -16,8 +16,9 @@ public class PetFrequencies
 
 		// initialise all types to null and all frequencies to 0
 		for (int type=0; type<MAX_PET_TYPES; type++)
-		{       petTypes[type] = null;
-		frequencies[type] = 0;
+		{       
+			petTypes[type] = null;
+			frequencies[type] = 0;
 		}
 
 		FileReader fr = null;
