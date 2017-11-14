@@ -33,11 +33,23 @@ public class DataSetTester
       Measurable maxCoin = coinData.getMaximum();
       System.out.println("Highest coin value = " + maxCoin.getMeasure());
 
+      DataSet childData = new DataSet();
+      Child c1 = new Child(1);
+      Child c2 = new Child(5);
+      Child c3 = new Child(10);
+      
+      childData.add(c1);
+      childData.add(c2);
+      childData.add(c3);
+      
+      System.out.println("The oldest child has age " + childData.getMaximum().getMeasure());
+
       DataSet hybridData = new DataSet();
 
       hybridData.add(coin0);
       hybridData.add(bankAccount2);
       hybridData.add(coin2);
+      hybridData.add(c2);
 
       System.out.println("Average object value = " + hybridData.getAverage());
       Measurable maxObject = hybridData.getMaximum();

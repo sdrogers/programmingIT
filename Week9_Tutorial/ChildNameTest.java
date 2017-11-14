@@ -16,7 +16,7 @@ public class ChildNameTest {
 				numDistinctNames ++;
 			}else {
 				boolean found = false;
-				intn i=0;
+				int i=0;
 				while(!found & i<numDistinctNames)
 				{
 					if(thisName.equals(names[i].getName())) {
@@ -30,6 +30,9 @@ public class ChildNameTest {
 					Name newName = new Name(thisName);
 					names[numDistinctNames] = newName;
 					numDistinctNames++;
+					
+					// The following is the same...
+					names[numDistinctNames++] = new Name(thisName);
 				}
 			}
 		}
