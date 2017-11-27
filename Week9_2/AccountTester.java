@@ -5,6 +5,7 @@ public class AccountTester
 {  
    public static void main(String[] args)
    {  
+	  BankAccount simonsaccount = new BankAccount(10000000); 
       SavingsAccount mumsSavingsAccount = new SavingsAccount(5);
       
       CurrentAccount jimsCurrentAccount = new CurrentAccount(100);
