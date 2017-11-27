@@ -4,7 +4,7 @@ package MyPackage;
  * @author simon
  *
  */
-public class NoEnergyException extends Exception{
+public class NoEnergyException extends Exception {
 	private int myEnergy;
 	public NoEnergyException(int e) {
 		myEnergy = e;

@@ -1,19 +1,16 @@
 package MyPackage;
 
 /**
- * A class to describe Pets
- * 
+ * A class to represent pets
  * @author simon
  *
- *
  */
-
-public class Pet {
+public class Pet implements Comparable<Pet>{
 	protected String name;
 	protected int age;
 	protected int energy;
 	/**
-	 * Pet constructor, takes name and age as arguments
+	 * The default Pet constructor
 	 * @param name the name of the pet
 	 * @param age the age of the pet
 	 */
@@ -64,6 +61,17 @@ public class Pet {
 		}
 		else {
 			throw new NoEnergyException(this.energy);
+		}
+	}
+	public int compareTo(Pet other) {
+		if(this.age > other.getAge()) {
+			return 1;
+		}
+		else if(this.age == other.getAge()) {
+			return 0;
+		}
+		else {
+			return -1;
 		}
 	}
 }
