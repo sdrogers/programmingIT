@@ -8,17 +8,17 @@ public class LabEx1 {
 		boolean ok = false;
 		Scanner lineScanner;
 		while(!ok){
-		System.out.println("Input an integer");
-		String line = myScanner.next();
-		lineScanner = new Scanner(line);
-		try {
-			lineScanner.nextInt();
-			ok = true;
-		}catch(InputMismatchException e) {
-			System.out.println("That's not an integer!");
-		}
+			System.out.println("Input an integer");
+			String line = myScanner.next();
+			lineScanner = new Scanner(line);
+			try {
+				lineScanner.nextInt();
+				ok = true;
+			}catch(InputMismatchException e) {
+				System.out.println("That's not an integer!");
+			}
 		
-		lineScanner.close();
+			lineScanner.close();
 		}
 		
 		myScanner.close();
